@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool_bar_in_chitietCard"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#009688"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        />
+    <TextView
+        android:id="@+id/mieu_ta_the"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#009688"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:paddingStart="20dp"
+        tools:ignore="RtlSymmetry" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        >
+        <EditText
+            android:id="@+id/edt_csMieuTaThe"
+            android:layout_width="wrap_content"
+            android:layout_height="?actionBarSize"
+            android:hint="@string/miet_ta_the"
+            android:paddingStart="20dp"
+            android:singleLine="true"
+            tools:ignore="RtlSymmetry"
+            android:maxLength="20"
+            android:layout_weight="8"
+            />
+        <ImageView
+            android:id="@+id/icon_addMieuTaThe"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/enter"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_addUser"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:drawableLeftCompat="@drawable/ic_baseline_person_add_24"
+        android:paddingStart="15dp"
+        android:text="@string/add_user"
+        android:gravity="center_vertical"
+        android:drawablePadding="10dp"
+        android:textSize="15sp"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/txt_NgayHetHan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:drawableLeftCompat="@drawable/ic_baseline_today_24"
+        android:textSize="15sp"
+        android:paddingStart="15dp"
+        android:text="@string/ngay_het_han"
+        android:gravity="center_vertical"
+        android:drawablePadding="10dp"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/txt_file"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/tep_dinh_kem"
+        app:drawableLeftCompat="@drawable/ic_baseline_attach_file_24"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:paddingStart="15dp"
+        tools:ignore="RtlSymmetry"
+        android:drawablePadding="10dp"
+        />
+
+    <TextView
+        android:id="@+id/txt_dsCongViec"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/ds_cv"
+        android:textSize="15sp"
+        app:drawableStartCompat="@drawable/edit_works"
+        android:gravity="center_vertical"
+        android:paddingStart="15dp"
+        android:drawablePadding="10dp"
+        tools:ignore="RtlSymmetry"
+        />
+
+    <ListView
+        android:id="@+id/list_works"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:id="@+id/addNameWorks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        >
+        <EditText
+            android:id="@+id/edt_addWork"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/them_muc"
+            android:inputType="text"
+            />
+        <ImageView
+            android:id="@+id/icon_enter_AddWork"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/enter"
+            />
+    </LinearLayout>
+
+</LinearLayout>

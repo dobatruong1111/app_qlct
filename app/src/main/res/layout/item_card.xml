@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:id="@+id/liner_layout_card"
+    >
+
+    <ImageView
+        android:id="@+id/icon_card"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/icon_work"
+        android:layout_margin="10dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/nd_card"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        >
+        <TextView
+            android:id="@+id/name_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name_card"
+            android:textSize="15sp"
+            android:textColor="#000"
+            />
+        <TextView
+            android:id="@+id/note_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/note_card"
+            android:textColor="#817777"
+            android:textSize="12sp"
+
+            />
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time"
+            android:textSize="12sp"
+            android:textColor="#817777"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

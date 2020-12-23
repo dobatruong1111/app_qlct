@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool_bar_thong_bao"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="#009688"
+        />
+
+    <ImageView
+        android:id="@+id/icon_thongbao"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/edit_works"
+        android:layout_below="@id/tool_bar_thong_bao"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/txt_ThongBao"
+        android:layout_below="@id/tool_bar_thong_bao"
+        android:layout_toEndOf="@+id/icon_thongbao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

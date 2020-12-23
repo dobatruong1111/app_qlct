@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menu_xem"
+        android:title="@string/xem"
+        />
+    <item android:id="@+id/menu_dct"
+        android:title="@string/dichuyenthe"
+        />
+    <item android:id="@+id/menu_sct"
+        android:title="@string/saochepthe"
+        />
+</menu>

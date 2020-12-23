@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_home"
+        android:title=""
+        android:icon="@drawable/ic_baseline_home_24"
+        />
+    <item android:id="@+id/nav_tb"
+        android:title=""
+        android:icon="@drawable/ic_baseline_notifications_24"
+        />
+    <item android:id="@+id/nav_table"
+        android:title=""
+        android:icon="@drawable/ic_baseline_table_chart_24"
+        />
+    <item android:id="@+id/nav_card"
+        android:title=""
+        android:icon="@drawable/ic_baseline_credit_card_24"
+        />
+    <item android:id="@+id/nav_user"
+        android:title=""
+        android:icon="@drawable/ic_baseline_person_24"
+        />
+
+</menu>

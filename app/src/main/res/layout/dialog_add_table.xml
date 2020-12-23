@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:minHeight="300dp"
+    android:minWidth="300dp"
+    >
+
+    <TextView
+        android:id="@+id/txt_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_table"
+        android:layout_centerHorizontal="true"
+        android:textColor="#009688"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout_addTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_add"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_addTable"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:hint="@string/nameTable"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:drawableStart="@drawable/ic_baseline_table_chart_24"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_input_layout_addTable"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        >
+        <Button
+            android:id="@+id/bt_addTable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add"
+            android:background="@drawable/custom_bt"
+            android:textColor="#fff"
+            android:layout_marginEnd="10dp"
+            />
+
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_bt"
+            android:text="@string/cancel"
+            android:textColor="#fff"
+            android:layout_marginStart="10dp"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
